@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mains.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/a5431687cf.js" crossorigin="anonymous"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="cards-container">
+
+            <div class="cards-left">
+                <div class="cards-left__gradient"></div>
+                <div class="cards-left__date">
+                    <h2>Mardi</h2>
+                    <p>15 Jan 2019</p>
+                </div>
+                <div class="cards-left__loca">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Paris, FR</p>
+                </div>
+                <div class="cards-left__weather">
+                    <span class="material-symbols-outlined">light_mode</span>
+                    <h1>12°C</h1>
+                    <p>Ensoleillé</p>
+                </div>
+            </div>
+
+            <div class="cards-right">
+                <div class="cards-right__statistics">
+                    <div class="précipitation">
+                        <h3>Précipitation</h3>
+                        <p>15 %</p>
+                    </div>
+                    <div class="humidité">
+                        <h3>Humidité</h3>
+                        <p>45 %</p>
+                    </div>
+                    <div class="vent">
+                        <h3>Vent</h3>
+                        <p>15 km/h</p>
+                    </div>
+                </div>
+
+                <div class="cards-right__previsions">
+                    <div class="day mardi">
+                        <span class="material-symbols-outlined">light_mode</span>
+                        <h3>Mar</h3>
+                        <p class="temp">12°C</p>
+                    </div>
+                    <div class="day">
+                        <span class="material-symbols-outlined">cloud</span>
+                        <h3>Mer</h3>
+                        <p class="temp">9°C</p>
+                    </div>
+                    <div class="day">
+                        <span class="material-symbols-outlined">partly_cloudy_day</span>
+                        <h3>Jeu</h3>
+                        <p class="temp">12°C</p>
+                    </div>
+                    <div class="day">
+                        <span class="material-symbols-outlined">cloud</span>
+                        <h3>Ven</h3>
+                        <p class="temp">10°C</p>
+                    </div>
+                </div>
+
+                <div class="cards-right__location">
+                    <button><i class="fa-solid fa-location-dot"></i>Choisir localisation</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

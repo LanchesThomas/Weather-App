@@ -1,0 +1,70 @@
+@use "../utils/animations.scss";
+
+.cards-left {
+    width: 50%;
+    height: 105%;
+    border-radius: 20px;
+    margin-right: -20px;
+    margin-top: -8px;
+    background-image: url(https://images.unsplash.com/photo-1559963110-71b394e7494d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80);
+    z-index: 1;
+    position: relative;
+    filter: brightness(110%);
+    transition: 300ms ease;
+
+    &:hover {
+        transform: scale(1.05) perspective(1500px) rotateY(10deg);
+    }
+    
+    
+    &__gradient {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+        background: linear-gradient(135deg, #86EAEF, #595AC8);
+        opacity: 0.8;
+        border-radius: 20px;
+    }
+
+    &__date {
+        position: absolute;
+        color: #FEFFFF;
+        font-family: 'montserrat', sans-serif;
+        top: 20px;
+        left: 25px;
+    
+
+        & h2 {
+            font-weight: 600;
+        }
+    }
+
+    &__loca {
+        position: absolute;
+        color: #FEFFFF;
+        font-family: 'montserrat', sans-serif;
+        top: 80px;
+        left: 25px;
+        display: flex;
+        gap: 8px;
+    }
+
+    &__weather {
+        position: absolute;
+        color: #FEFFFF;
+        font-family: 'montserrat', sans-serif;
+        top: 170px;
+        left: 25px;
+
+        & span {
+            font-size: 50px;
+            font-weight: 600
+        }
+
+        & h1 {
+            font-size: 50px;
+        }
+    }
+}
